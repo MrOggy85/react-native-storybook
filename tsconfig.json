@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "compilerOptions": {
+    "allowJs": true /* Allow javascript files to be compiled. */,
+    "allowSyntheticDefaultImports": true /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */,
+    "declaration": true /* Generates corresponding '.d.ts' file. */,
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+    "isolatedModules": true /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */,
+    "incremental": true,
+    "jsx": "react-jsx" /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */,
+    "lib": ["es2017"],
+    "module": "commonjs" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
+    "moduleResolution": "node" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */,
+    "noEmit": true /* Do not emit outputs. */,
+    "noUncheckedIndexedAccess": true,
+    "outDir": "./dist" /* Redirect output structure to the directory. */,
+    "resolveJsonModule": true,
+    "skipLibCheck": true /* Skip type checking of declaration files. */,
+    "strict": true /* Enable all strict type-checking options. */,
+    "target": "esnext" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */,
+  },
+  "include": ["src/**/*", "storybook/**/*"],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js"
+  ]
+}

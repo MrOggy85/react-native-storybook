@@ -1,0 +1,34 @@
+{
+  "name": "react-native-storybook",
+  "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "react-native start",
+    "metro:start": "npm run metro:start -- --resetCache",
+    "metro:storybook": "STORYBOOK=1 react-native start --resetCache",
+    "storybook:generate": "node scripts/generateStories.js && prettier -w ./storybook/generatedStories.ts && eslint --fix ./storybook/generatedStories.ts"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-native": "0.72.0",
+    "react-native-svg": "^15.11.1"
+  },
+  "devDependencies": {
+    "@react-native-community/cli": "11.3.2",
+    "@react-native/eslint-config": "^0.72.2",
+    "@react-native/metro-config": "^0.72.6",
+    "@types/react": "^18.0.24",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.4",
+    "eslint": "^8.57.1",
+    "eslint-import-resolver-typescript": "^3.7.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "metro-react-native-babel-preset": "^0.76.5",
+    "prettier": "^3.2.5",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.2"
+  }
+}
